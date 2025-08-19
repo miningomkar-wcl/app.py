@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Sample data (you can expand with your full mine list)
-(mines = [
+mines = [
     ("Wani", "Durgapur Rayyatwari OC", 1729000),
     ("Wani", "Bellora-Naigaon OC (Expansion)", 2460000),
     ("Wani", "Ukni OC (Expansion)", 3810000),
@@ -47,7 +47,7 @@ import pandas as pd
     ("Pench", "Chhinda OC Mine", 1300000),
     ("Pench", "Dhankasa UG Mine", 1200000),
     ("Pench", "Jamuniya UG Mine", 828000),
-      ])
+      ]
 
 
 # Convert to DataFrame
@@ -94,6 +94,7 @@ st.dataframe(region_totals)
 st.subheader("🏆 Grand Total")
 st.write(f"Total Yearly Output: {df['Yearly Output (tonnes)'].sum():,} tonnes")
 st.write(f"Total Daily Output: {df['Daily Output (tonnes)'].sum():,.2f} tonnes")
+
 
 
 
